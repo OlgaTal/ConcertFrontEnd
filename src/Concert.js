@@ -49,11 +49,6 @@ class Concert extends React.Component{
       },
       credentials: "same-origin"
     }).then(response => {
-       response.status     //=> number 100–599
-       response.statusText //=> String
-       response.headers    //=> Headers
-       response.url        //=> String
-
        response.text().then(responseText => {
          const data = JSON.parse(responseText);
          console.log(data);

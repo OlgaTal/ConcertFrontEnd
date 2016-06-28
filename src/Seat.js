@@ -60,11 +60,10 @@ class Seat extends React.Component{
     for (let i = 1; i <= quantity; i++) {
 
       if (taken.find(t => t === i)) {
-        chairs.push(<button name={i} key={i} style={{color: 'red'}}>{i}</button>);
+        chairs.push(<button name={i} key={i} style={{color: 'black', backgroundColor: 'red', margin: '10px'}}>{i}</button>);
       } else {
-        chairs.push(<button name={i} key={i} onClick={this.purchaseSeat.bind(this, i)}>{i}</button>);
+        chairs.push(<button name={i} key={i} onClick={this.purchaseSeat.bind(this, i)} style={{margin: '10px'}}>{i}</button>);
       }
-
     }
 
     return (
