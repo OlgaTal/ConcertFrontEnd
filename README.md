@@ -1,1 +1,1 @@
-# ConcertFrontEnd project
+# ConcertFrontEnd REACT project
